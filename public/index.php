@@ -13,9 +13,21 @@ $db = $database->getConnection();
 
 // Initialize the ProductController
 $productController = new ProductController($db);
+$authController = new AuthController($db);
 
 // Initialize the router
 $router = new Router();
+
+
+
+// Public routes (no authentication required)
+$router->post('/login', function() use ($authController) {
+    $authController->login();
+});
+
+$router->post('/register', function() use ($authController) {
+    $authController->register();
+});
 
 // Define routes
 $router->post('/products', function() use ($productController) {
