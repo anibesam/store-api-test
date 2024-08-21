@@ -2,17 +2,17 @@
 
 ```
 Get All Products:
-curl -X GET http://localhost:8000/products
+curl -X GET http://localhost:3000/products
 ```
 ```
 Get a Single Product:
-curl -X GET http://localhost:8000/products/1
+curl -X GET http://localhost:3000/products/1
 ```
 ```
 Update a Product:
-curl -X PUT http://localhost:8000/products/1
+curl -X PUT http://localhost:3000/products/1
 ```
 ```
 Delete a Product:
-curl -X DELETE http://localhost:8000/products/1
+curl -X DELETE http://localhost:3000/products/1
 ```
